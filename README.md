@@ -1,10 +1,18 @@
-# ImageQuality-R1
+<div align="center">
+
+# 🐍 *ImageQuality-R1*: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank
 
 This is the official code for ImageQuality-R1.
 
 <p align="center">
     <img src="images/intro.png" width="700">
 </p>
+
+<a href="https://huggingface.co/TianheWu/ImageQuality-R1-v1" target="_blank">
+    <img alt="HF Model: ImageQuality-R1" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-ImageQuality--R1-ffc107?color=ffc107&logoColor=white" height="25" />
+</a>
+
+</div align="center">
 
 ## Quick Start
 
