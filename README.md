@@ -12,11 +12,29 @@ This is the official code for VisualQuality-R1.
     <img alt="HF Model: ImageQuality-R1" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-VisualQuality--R1-ffc107?color=ffc107&logoColor=white" height="25" />
 </a>
 
+<div style="font-family: charter;">
+    <a href="https://tianhewu.github.io/tianhe-page/" target="_blank">Tianhe Wu</a>,
+    <a href="https://scholar.google.com/citations?user=-jj3Ub8AAAAJ&hl=zh-CN&authuser=2" target="_blank">Jian Zou</a>,
+    <a href="https://penghao-wu.github.io/" target="_blank">Jie Liang</a>,
+    <a href="https://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank">Lei Zhang*</a>,
+    <a href="https://kedema.org/" target="_blank">Kede Ma*</a>,
+    <br>
+    * denotes the corresponding author
+</div>
+
 </div align="center">
+
+<br>
+
+> *The first NR-IQA model enhanced by RL2R, capable of both quality description and rating through reasoning.*
+
+## Release
+- [05/16/25] 🔥 We have released a preview version of VisualQuality-R1, trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.!
 
 ## Quick Start
 
-This is the demo for inference one image quality score and it's corresponding reasoning content.
+### Single Image Inference
+Demo: Inferring an image quality score and generating its reasoning content.
 ```
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
@@ -110,3 +128,15 @@ print(reasoning)
 print(score)
 
 ```
+
+## Acknowledgement
+- [VLM-R1](https://github.com/om-ai-lab/VLM-R1): We start from codebase from the VLM-R1.
+
+
+## Related Projects
+- [ECCV 2024] [A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment](https://arxiv.org/abs/2403.10854v2)
+- [CVPR 2025] [Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption](https://www.arxiv.org/abs/2503.11221)
+
+## 📧 Contact
+If you have any question, please email `wth22@mails.tsinghua.edu.cn` or `tianhewu@cityu.edu.hk`.
+
