@@ -29,7 +29,7 @@ This is the official code for VisualQuality-R1.
 > *The first NR-IQA model enhanced by RL2R, capable of both quality description and rating through reasoning.*
 
 ## Release
-- [05/16/25] 🔥 We have released a preview version of VisualQuality-R1, trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.!
+- [05/16/25] 🔥 We have released a preview version of VisualQuality-R1, trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.
 
 ## Quick Start
 
