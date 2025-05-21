@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐍 *VisualQuality-R1*: Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank
+# 🐍 *VisualQuality-R1*:<br> Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank
 
 This is the official code for VisualQuality-R1.
 
@@ -8,6 +8,10 @@ This is the official code for VisualQuality-R1.
     <img src="images/intro.png" width="700">
 </p>
 
+
+<a href="https://arxiv.org/abs/2505.14460" target="_blank">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-VisualQuality--R1-red?logo=arxiv" height="25" />
+</a>
 <a href="https://huggingface.co/TianheWu/ImageQuality-R1-v1" target="_blank">
     <img alt="HF Model: ImageQuality-R1" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-VisualQuality--R1-ffc107?color=ffc107&logoColor=white" height="25" />
 </a>
