@@ -13,7 +13,7 @@ This is the official code for VisualQuality-R1.
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-VisualQuality--R1-red?logo=arxiv" height="25" />
 </a>
 <a href="https://huggingface.co/TianheWu/ImageQuality-R1-v1" target="_blank">
-    <img alt="HF Model: ImageQuality-R1" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-VisualQuality--R1-ffc107?color=ffc107&logoColor=white" height="25" />
+    <img alt="HF Model: ImageQuality-R1" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-VisualQuality--R1--preview-ffc107?color=ffc107&logoColor=white" height="25" />
 </a>
 
 <div style="font-family: charter;">
