@@ -341,6 +341,12 @@ print(answer)
 ```
 </details>
 
+### Example
+The image shown was captured using the OPPO Find X6 Pro.
+<p align="center">
+    <img src="images/realistic_scenario.png" width="600">
+</p>
+
 ## Acknowledgement
 - [VLM-R1](https://github.com/om-ai-lab/VLM-R1): We start from codebase from the VLM-R1.
 
