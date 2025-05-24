@@ -43,7 +43,11 @@ pip install -r requirements.txt
 ```
 
 ## Quick Start
-### Single Image Quality Rating
+This section includes the usages of **VisualQuality-R1**.
+
+<details>
+<summary>Example Code (Single Image Quality Rating)</summary>
+    
 ```
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
@@ -132,8 +136,12 @@ reasoning, score = score_image(
 print(reasoning)
 print(score)
 ```
+</details>
 
-### Batch Images Quality Rating
+
+<details>
+<summary>Example Code (Batch Images Quality Rating)</summary>
+
 ```
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
@@ -253,8 +261,12 @@ with open(file_name, "w") as file:
 
 print("Done!")
 ```
+</details>
 
-### Images Inference
+
+<details>
+<summary>Example Code (Images Inference)</summary>
+
 You can prompt anything what you like in the following commands (including multi-image as input)
 ```
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
@@ -327,6 +339,7 @@ answer = generate(
 
 print(answer)
 ```
+</details>
 
 ## Acknowledgement
 - [VLM-R1](https://github.com/om-ai-lab/VLM-R1): We start from codebase from the VLM-R1.
