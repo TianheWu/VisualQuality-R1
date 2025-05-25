@@ -12,9 +12,13 @@ This is the official code for VisualQuality-R1.
 <a href="https://arxiv.org/abs/2505.14460" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-VisualQuality--R1-red?logo=arxiv" height="25" />
 </a>
-<a href="https://huggingface.co/TianheWu/ImageQuality-R1-v1" target="_blank">
-    <img alt="HF Model: ImageQuality-R1" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-VisualQuality--R1--preview-ffc107?color=ffc107&logoColor=white" height="25" />
+<a href="https://huggingface.co/TianheWu/VisualQuality-R1-7B" target="_blank">
+    <img alt="HF Model: VisualQuality-R1" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-VisualQuality--R1--7B-ffc107?color=ffc107&logoColor=white" height="25" />
 </a>
+<a href="https://huggingface.co/TianheWu/VisualQuality-R1-7B-preview" target="_blank">
+    <img alt="HF Model: VisualQuality-R1" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Model-Preview--Version-ffc107?color=ffc107&logoColor=white" height="25" />
+</a>
+
 
 <div style="font-family: charter;">
     <a href="https://tianhewu.github.io/tianhe-page/" target="_blank">Tianhe Wu</a>,
