@@ -23,7 +23,7 @@ This is the official code for VisualQuality-R1.
 <div style="font-family: charter;">
     <a href="https://tianhewu.github.io/tianhe-page/" target="_blank">Tianhe Wu</a>,
     <a href="https://scholar.google.com/citations?user=-jj3Ub8AAAAJ&hl=zh-CN&authuser=2" target="_blank">Jian Zou</a>,
-    <a href="https://penghao-wu.github.io/" target="_blank">Jie Liang</a>,
+    <a href="https://scholar.google.com/citations?user=REWxLZsAAAAJ&hl=en" target="_blank">Jie Liang</a>,
     <a href="https://www4.comp.polyu.edu.hk/~cslzhang/" target="_blank">Lei Zhang*</a>,
     <a href="https://kedema.org/" target="_blank">Kede Ma*</a>,
     <br>
