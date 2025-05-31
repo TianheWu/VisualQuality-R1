@@ -52,7 +52,7 @@ This section includes the usages of **VisualQuality-R1**.
 <details>
 <summary>Example Code (Single Image Quality Rating)</summary>
     
-```
+```python
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
 
@@ -146,7 +146,7 @@ print(score)
 <details>
 <summary>Example Code (Batch Images Quality Rating)</summary>
 
-```
+```python
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
 from tqdm import tqdm
@@ -272,7 +272,7 @@ print("Done!")
 <summary>Example Code (Images Inference)</summary>
 
 You can prompt anything what you like in the following commands (including multi-image as input)
-```
+```python
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
 
