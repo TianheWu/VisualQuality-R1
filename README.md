@@ -77,7 +77,7 @@ bash src/open-r1-multimodal/run_scripts/KADID-10K/multi_run_kadid.sh
 ```
 
 
-## Quick Inference Start
+## Quick Start for Inference
 This section includes the usages of **VisualQuality-R1**.
 
 <details>
