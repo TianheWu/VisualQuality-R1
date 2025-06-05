@@ -54,9 +54,26 @@ bash setup.sh
 
 ### Preparation
 1. To smoothly execute the training procedure, first download the IQA images and place them all in a **single folder**.
-2. Given a MOS file (see KADID-10K)
+2. Given an original MOS file (e.g., KADID-10K_mos.txt), first execute `cd datasets`, then run `python make_data.py` (with moderate modifications) to generate a **JSON file** for model training.
+3. Download the [Qwen/Qwen2.5-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) into a folder.
 
+### Training within a Single Node
+Please modify three elements in `src/open-r1-multimodal/run_scripts/KADID-10K/one_node_run_kadid.sh`:
+```
+--model_name_or_path [Your Qwen2.5-VL-7B-Instruct path] \
+--image_folders [Your dataset images path] \
+--data_file_paths [Your JSON file path] \
+```
+Then, run:
+```
+bash src/open-r1-multimodal/run_scripts/KADID-10K/one_node_run_kadid.sh
+```
 
+### Training within Multiple Nodes
+After making the necessary modifications, run the following command:
+```
+bash src/open-r1-multimodal/run_scripts/KADID-10K/multi_run_kadid.sh
+```
 
 
 ## Quick Inference Start
@@ -65,7 +82,7 @@ This section includes the usages of **VisualQuality-R1**.
 <details>
 <summary>Example Code (Single Image Quality Rating)</summary>
     
-```
+```python
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
 
@@ -159,7 +176,7 @@ print(score)
 <details>
 <summary>Example Code (Batch Images Quality Rating)</summary>
 
-```
+```python
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
 from tqdm import tqdm
@@ -285,7 +302,7 @@ print("Done!")
 <summary>Example Code (Images Inference)</summary>
 
 You can prompt anything what you like in the following commands (including multi-image as input)
-```
+```python
 from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 from qwen_vl_utils import process_vision_info
 
