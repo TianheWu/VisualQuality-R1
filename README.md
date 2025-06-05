@@ -37,16 +37,29 @@ This is the official code for VisualQuality-R1.
 > *The first NR-IQA model enhanced by RL2R, capable of both quality description and rating through reasoning.*
 
 ## Release
-- [05/16/25] 🔥 We have released a preview version of VisualQuality-R1, trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.
+- [06/05/25] 🔥 We have released the training code of VisualQuality-R1.
+- [05/16/25] 🤗 We have released a preview version of VisualQuality-R1, trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.
 
 
 ## Installation
-run code:
+We currently support training on A100 and A800 GPUs. To set up the training environment, use the following commands:
 ```
-pip install -r requirements.txt
+conda create -n visualquality python=3.11
+conda activate visualquality
+
+bash setup.sh
 ```
 
-## Quick Start
+## Training
+
+### Preparation
+1. To smoothly execute the training procedure, first download the IQA images and place them all in a **single folder**.
+2. Given a MOS file (see KADID-10K)
+
+
+
+
+## Quick Inference Start
 This section includes the usages of **VisualQuality-R1**.
 
 <details>
