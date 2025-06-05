@@ -2,7 +2,7 @@
 
 # 🐍 *VisualQuality-R1*:<br> Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank
 
-This is the official code for VisualQuality-R1.
+This is the official code of VisualQuality-R1.
 
 <p align="center">
     <img src="images/intro.png" width="700">
