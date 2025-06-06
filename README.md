@@ -45,7 +45,7 @@ This is the official code of VisualQuality-R1.
 ## Installation
 We currently support training on A100 and A800 GPUs. To set up the training environment, use the following commands:
 ```
-conda create -n visualquality python=3.11
+conda create -n visualquality python=3.11.10
 conda activate visualquality
 
 bash setup.sh
