@@ -38,7 +38,8 @@ This is the official code of VisualQuality-R1.
 
 ## Release
 - [06/05/25] 🔥 We have released the training code of VisualQuality-R1.
-- [05/16/25] 🤗 We have released a preview version of VisualQuality-R1, trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.
+- [05/25/25] 🤗 We have released a the final version of [VisualQuality-R1-7B](https://huggingface.co/TianheWu/VisualQuality-R1-7B).
+- [05/16/25] 🤗 We have released a preview version of [VisualQuality-R1-7B-preview](https://huggingface.co/TianheWu/VisualQuality-R1-7B-preview), trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.
 
 
 ## Installation
@@ -76,7 +77,7 @@ bash src/open-r1-multimodal/run_scripts/KADID-10K/multi_run_kadid.sh
 ```
 
 
-## Quick Inference Start
+## Quick Start for Inference
 This section includes the usages of **VisualQuality-R1**.
 
 <details>
