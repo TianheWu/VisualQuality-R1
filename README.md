@@ -1,6 +1,11 @@
+<p align="center">
+    <img src="images/logo.png" width="400">
+</p>
+
+
 <div align="center">
 
-# 🐍 *VisualQuality-R1*:<br> Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank
+# Reasoning-Induced Image Quality Assessment via Reinforcement Learning to Rank
 
 This is the official code of VisualQuality-R1.
 
