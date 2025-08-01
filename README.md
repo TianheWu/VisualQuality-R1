@@ -518,7 +518,7 @@ The image shown was captured using the OPPO Find X6 Pro.
 - [CVPR 2025] [Toward Generalized Image Quality Assessment: Relaxing the Perfect Reference Quality Assumption](https://www.arxiv.org/abs/2503.11221)
 
 ## 📧 Contact
-If you have any question, please email `wth22@mails.tsinghua.edu.cn` or `tianhewu@cityu.edu.hk`.
+If you have any question, please email `sigstianhewu@gmail.com` or `tianhewu@cityu.edu.hk`.
 
 ## BibTeX
 ```
