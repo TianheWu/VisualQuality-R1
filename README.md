@@ -43,7 +43,7 @@ This is the official code of VisualQuality-R1.
 
 ## Release
 - [06/05/25] 🔥 We have released the training code of VisualQuality-R1.
-- [05/25/25] 🤗 We have released a the final version of [VisualQuality-R1-7B](https://huggingface.co/TianheWu/VisualQuality-R1-7B).
+- [05/25/25] 🤗 We have released the final version of [VisualQuality-R1-7B](https://huggingface.co/TianheWu/VisualQuality-R1-7B).
 - [05/16/25] 🤗 We have released a preview version of [VisualQuality-R1-7B-preview](https://huggingface.co/TianheWu/VisualQuality-R1-7B-preview), trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.
 
 
