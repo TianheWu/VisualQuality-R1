@@ -56,6 +56,133 @@ conda activate visualquality
 bash setup.sh
 ```
 
+## 🚀🚀🚀 Updated: VisualQuality-R1 high efficiency inference script with vLLM
+
+<details>
+<summary>Example Code (VisualQuality-R1: Batch Images Quality Rating with thinking, using vLLM)</summary>
+
+```python
+# Please install vLLM first: https://docs.vllm.ai/en/stable/getting_started/installation/gpu.html
+
+from transformers import Qwen2_5_VLProcessor, AutoProcessor
+from vllm import LLM, RequestOutput, SamplingParams
+from qwen_vl_utils import process_vision_info
+
+import torch
+import random
+import re
+import os
+
+IMAGE_PATH = "./images"
+MODEL_PATH = "TianheWu/VisualQuality-R1-7B"
+
+def get_image_paths(folder_path):
+    image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.gif', '.tiff', '.webp'}
+    image_paths = []
+
+    for root, dirs, files in os.walk(folder_path):
+        for file in files:
+            _, ext = os.path.splitext(file)
+            if ext.lower() in image_extensions:
+                image_paths.append(os.path.join(root, file))
+
+    return image_paths
+
+def score_batch_image(image_paths, model: LLM, processor: Qwen2_5_VLProcessor):
+    PROMPT = (
+        "You are doing the image quality assessment task. Here is the question: "
+        "What is your overall rating on the quality of this picture? The rating should be a float between 1 and 5, "
+        "rounded to two decimal places, with 1 representing very poor quality and 5 representing excellent quality."
+    )
+
+    QUESTION_TEMPLATE = "{Question} First output the thinking process in <think> </think> tags and then output the final answer with only one score in <answer> </answer> tags."
+
+    messages = []
+    for img_path in image_paths:
+        message = [
+            {
+                "role": "user",
+                "content": [
+                    {'type': 'image', 'image': img_path},
+                    {"type": "text", "text": QUESTION_TEMPLATE.format(Question=PROMPT)}
+                ],
+            }
+        ]
+        messages.append(message)
+
+    all_outputs = []  # List to store all answers
+
+    # Preparation for inference
+    print("preprocessing ...")
+    texts = [processor.apply_chat_template(msg, tokenize=False, add_generation_prompt=True, add_vision_id=True) for msg in messages]
+    image_inputs, video_inputs = process_vision_info(messages)
+
+    inputs = [{
+        "prompt": texts[i],
+        "multi_modal_data": {
+            "image": image_inputs[i]
+        },
+    } for i in range(len(messages))]
+    
+    output: list[RequestOutput] = model.generate(
+        inputs,
+        sampling_params=SamplingParams(
+            max_tokens=512,
+            temperature=0.1,
+            top_k=50,
+            top_p=1.0,
+            stop_token_ids=[processor.tokenizer.eos_token_id],
+        ),
+    )
+
+    batch_output_text = [o.outputs[0].text for o in output]
+
+    all_outputs.extend(batch_output_text)
+    
+    path_score_dict = {}
+    for img_path, model_output in zip(image_paths, all_outputs):
+        print(f"{model_output = }")
+        try:
+            model_output_matches = re.findall(r'<answer>(.*?)</answer>', model_output, re.DOTALL)
+            model_answer = model_output_matches[-1].strip() if model_output_matches else model_output.strip()
+            score = float(re.search(r'\d+(\.\d+)?', model_answer).group())
+        except:
+            print(f"Meet error with {img_path}, please generate again.")
+            score = random.randint(1, 5)
+
+        path_score_dict[img_path] = score
+
+    return path_score_dict
+
+
+random.seed(1)
+model = LLM(
+    model=MODEL_PATH,
+    tensor_parallel_size=1,
+    trust_remote_code=True,
+    seed=1,
+)
+
+processor = AutoProcessor.from_pretrained(MODEL_PATH)
+processor.tokenizer.padding_side = "left"
+
+image_paths = get_image_paths(IMAGE_PATH) # It should be a list
+
+path_score_dict = score_batch_image(
+    image_paths, model, processor
+)
+
+file_name = "output.txt"
+with open(file_name, "w") as file:
+    for key, value in path_score_dict.items():
+        file.write(f"{key} {value}\n") 
+
+print("Done!")
+```
+</details>
+
+
+
 ## 🚀🚀🚀 Updated: VisualQuality-R1-Fast
 
 <details>
