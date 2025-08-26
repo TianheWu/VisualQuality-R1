@@ -512,7 +512,7 @@ print("Done!")
 </details>
 
 
-## 🚀🚀🚀 Updated: VisualQuality-R1 high efficiency inference script with vLLM
+## 🚀 Updated: VisualQuality-R1 high efficiency inference script with vLLM
 
 <details>
 <summary>Example Code (VisualQuality-R1: Batch Images Quality Rating with thinking, using vLLM)</summary>
