@@ -66,7 +66,7 @@ bash setup.sh
 ## ⚡Quick Start
 
 ### Non-Thinking Inference
-When you excute inference with VisualQuality-R1 as a reward/evaluation model, you can only use **non-thinking** mode to facilitate inference time with only 1 output token with following prompt:
+When you execute inference with VisualQuality-R1 as a reward/evaluation model, you can only use **non-thinking** mode to reduce inference time, generating only a single output token with the following prompt:
 ```
 PROMPT = (
     "You are doing the image quality assessment task. Here is the question: "
