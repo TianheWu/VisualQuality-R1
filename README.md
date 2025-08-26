@@ -672,6 +672,9 @@ The image shown was captured using the OPPO Find X6 Pro.
 ## Acknowledgement
 - [VLM-R1](https://github.com/om-ai-lab/VLM-R1): We start from codebase from the VLM-R1.
 
+I would like to sincerely thank [Zhuoyan Luo](https://scholar.google.com/citations?user=mKQhEsIAAAAJ&hl=en&oi=ao) for the generous support of my project and for the invaluable guidance in the field of AR generation.
+
+
 ## 📧 Contact
 If you have any question, please email `sigstianhewu@gmail.com` or `tianhewu-c@my.cityu.edu.hk`.
 
