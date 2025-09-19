@@ -49,9 +49,10 @@ This is the official code of VisualQuality-R1.
 - Capability of visual quality captioning and rating
 
 ## 📜 News
-- [06/05/25] 🔥 We have released the training code of VisualQuality-R1.
-- [05/25/25] 🤗 We have released the final version of [VisualQuality-R1-7B](https://huggingface.co/TianheWu/VisualQuality-R1-7B).
-- [05/16/25] 🤗 We have released a preview version of [VisualQuality-R1-7B-preview](https://huggingface.co/TianheWu/VisualQuality-R1-7B-preview), trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.
+- [18/09/25] 🔥 Our paper has been accepted has **Spotlight** in NeurIPS 2025!
+- [05/06/25] 🔥 We have released the training code of VisualQuality-R1.
+- [25/05/25] 🤗 We have released the final version of [VisualQuality-R1-7B](https://huggingface.co/TianheWu/VisualQuality-R1-7B).
+- [16/05/25] 🤗 We have released a preview version of [VisualQuality-R1-7B-preview](https://huggingface.co/TianheWu/VisualQuality-R1-7B-preview), trained on three datasets: KADID-10K, TID2013, and KonIQ-10k.
 
 
 ## 🔨 Installation
