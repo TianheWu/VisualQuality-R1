@@ -96,17 +96,16 @@ def score_image(image_path, model, processor):
     PROMPT = (
         "You are doing the image quality assessment task. Here is the question: "
         "What is your overall rating on the quality of this picture? The rating should be a float between 1 and 5, "
-        "rounded to two decimal places, with 1 representing very poor quality and 5 representing excellent quality. "
-        "First output the thinking process in <think> </think> tags and then output the final answer with only one score in <answer> </answer> tags."
+        "rounded to two decimal places, with 1 representing very poor quality and 5 representing excellent quality."
     )
-        
+    
     QUESTION_TEMPLATE = "{Question} Please only output the final answer with only one score in <answer> </answer> tags."
     message = [
         {
             "role": "user",
             "content": [
                 {'type': 'image', 'image': image_path},
-                {"type": "text", "text": PROMPT}
+                {"type": "text", "text": QUESTION_TEMPLATE.format(Question=PROMPT)}
             ],
         }
     ]
@@ -310,8 +309,7 @@ def score_image(image_path, model, processor):
     PROMPT = (
         "You are doing the image quality assessment task. Here is the question: "
         "What is your overall rating on the quality of this picture? The rating should be a float between 1 and 5, "
-        "rounded to two decimal places, with 1 representing very poor quality and 5 representing excellent quality. "
-        "First output the thinking process in <think> </think> tags and then output the final answer with only one score in <answer> </answer> tags."
+        "rounded to two decimal places, with 1 representing very poor quality and 5 representing excellent quality."
     )
         
     QUESTION_TEMPLATE = "{Question} First output the thinking process in <think> </think> tags and then output the final answer with only one score in <answer> </answer> tags."
@@ -321,7 +319,7 @@ def score_image(image_path, model, processor):
             "role": "user",
             "content": [
                 {'type': 'image', 'image': image_path},
-                {"type": "text", "text": PROMPT}
+                {"type": "text", "text": QUESTION_TEMPLATE.format(Question=PROMPT)}
             ],
         }
     ]
