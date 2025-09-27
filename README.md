@@ -644,7 +644,7 @@ print("Done!")
 3. Download the [Qwen/Qwen2.5-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) into a folder.
 
 ### Muti-dataset Training
-After generating single dataset jsonl file, you can integrate them with reording `id` in jsonl file. A example can be seen in `datasets/combined/RL-622-KADID-TID2013-KONIQ-LIVEC_train_scoring.jsonl`
+After generating single dataset jsonl files, you can integrate them with reording `id`. An example can be seen in `datasets/combined/RL-622-KADID-TID2013-KONIQ-LIVEC_train_scoring.jsonl`
 
 ### Training within a Single Node
 Please modify three elements in `src/open-r1-multimodal/run_scripts/KADID-10K/one_node_run_kadid.sh`:
